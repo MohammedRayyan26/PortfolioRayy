@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Your Name</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p>BCA Final Year Student & Aspiring Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Profile Photo">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I'm a passionate BCA final year student with a strong interest in web development, software design, and
+                problem-solving. I love building projects that make a difference.</p>
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-level html">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level css">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level js">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                    <div class="skill-level java">80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+        </div>
+        <div class="project-gallery">
+            <div class="project-card" data-category="web">
+                <img src="images/projects/project1.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>E-Commerce Website</h3>
+                    <p>Online store built with MERN stack</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="java">
+                <img src="images/projects/project2.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Library Management System</h3>
+                    <p>Java Swing application with MySQL</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card" data-category="python">
+                <img src="images/projects/project3.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Chatbot</h3>
+                    <p>AI chatbot using Python and NLTK</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Mohammed Rayyan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
